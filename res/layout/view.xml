@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:layout_gravity="right" android:paddingLeft="3px" android:paddingRight="3px">
+        
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_height="wrap_content" android:layout_width="fill_parent">
+	    
+		<TextView android:id="@+id/view_name" android:layout_height="wrap_content" android:text="Name, Person" android:textSize="30px" android:paddingLeft="4px" android:paddingRight="5px" android:shadowColor="#e0a0a0a0" android:shadowDx=".5" android:shadowDy=".5" android:shadowRadius="3.4" android:singleLine="true" android:focusable="false" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_weight="1"/>
+		
+		<!--<TextView android:id="@+id/view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title of Position" android:textSize="12px" android:paddingLeft="10px"/>
+		<TextView android:id="@+id/view_company" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Name of Company" android:textSize="12px" android:paddingLeft="10px"/>
+		-->
+		<DigitalClock android:text="DigitalClock01" android:id="@+id/DigitalClock01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10px" android:layout_gravity="bottom|right" android:gravity="bottom|right" android:focusable="false" android:paddingRight="7px" android:paddingLeft="5px"></DigitalClock>	
+	</LinearLayout>
+	<Button android:id="@+id/view_button" android:layout_height="fill_parent" android:textSize="12px" android:gravity="bottom|right" android:layout_width="fill_parent" android:text="Available to be meet at 2:30 PM Today.">
+
+</Button>
+	
+	
+</LinearLayout>
+    
+<ListView android:layout_width="wrap_content" android:layout_height="fill_parent" android:id="@+id/android:list" android:stackFromBottom="true" android:layout_weight="1"></ListView>
+<TextView android:id="@+id/android:empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:text="space" android:textSize="36px" android:gravity="center" android:textColor="#a0909090" android:visibility="gone"/>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:padding="5px">
+   <TextView android:id="@+id/view_searchtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:paddingLeft="2px" android:text="Type to search." android:focusable="false"/>
+   <EditText android:text="" android:id="@+id/view_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#000000" android:freezesText="true" android:selectAllOnFocus="true" android:singleLine="true"/>
+</LinearLayout>
+
+
+</LinearLayout>

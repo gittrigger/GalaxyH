@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:textSize="28px" android:gravity="center" android:paddingRight="5px" android:paddingLeft="5px" android:paddingTop="2px" android:text="Synchronization" android:textColor="#909090" android:paddingBottom="15px"/> 
+
+		
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:paddingLeft="5px" android:paddingRight="5px">
+   <TextView android:id="@+id/configure_syncreviewtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:paddingLeft="2px" android:text="Synchronization Review (hours)" android:focusable="false"/>
+   <EditText android:text="5" android:id="@+id/configure_syncreview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#000000" android:freezesText="true" android:singleLine="true" android:numeric="integer"/>
+   
+</LinearLayout>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:paddingLeft="4px" android:paddingRight="4px">
+	<TextView android:id="@+id/configure_syncrandroidtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:paddingLeft="2px" android:text="Synchronization of contacts on your personal database on the webmail service to this Android device. Contacts are grouped as 'Galaxy: '" android:focusable="false" />
+	<ToggleButton android:layout_width="fill_parent" android:layout_height="80px" android:id="@+id/configure_syncandroid" android:textOff="Sync Contacts" android:textOn="Sync Contacts"></ToggleButton>
+
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:orientation="horizontal">
+
+    <Button android:id="@+id/configure_verify" android:layout_height="wrap_content" android:text="Verify Settings" android:layout_weight="1" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_margin="3px" android:visibility="gone" />
+	<Button android:id="@+id/configure_close" android:layout_height="wrap_content" android:text="Close" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_margin="3px" android:paddingLeft="20px" android:paddingRight="20px"/>
+</LinearLayout>
+
+</LinearLayout>

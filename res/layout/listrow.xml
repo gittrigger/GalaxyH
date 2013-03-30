@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:paddingTop="10px" android:paddingBottom="10px" android:paddingLeft="10px" android:paddingRight="3px">
+    
+    <!-- url text unique not null, urltext text, farkpicurl text, farkpictext text, commenturl text, commenttext text, description text -->
+
+	<ImageView android:id="@+id/listrow_image" android:src="@drawable/globeicon" android:maxHeight="48px" android:maxWidth="48px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_height="48px" android:layout_width="48px" android:fadingEdge="horizontal|vertical" android:layout_marginRight="5px"/>
+	
+	<TextView android:id="@+id/listrow_type" android:layout_width="fill_parent" android:text="Feed Type" android:fadingEdge="horizontal" android:layout_height="wrap_content" android:textSize="12px" android:layout_toRightOf="@+id/listrow_image" android:layout_alignParentTop="true" android:textColor="#f0f0f0"/>
+	<TextView android:id="@+id/listrow_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:text="Date" android:gravity="left" android:layout_toRightOf="@+id/listrow_image" android:layout_below="@+id/listrow_type" android:textSize="12px" android:textColor="#f0f0f0" />	
+	<TextView android:id="@+id/listrow_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:text="Author" android:gravity="left" android:layout_toRightOf="@+id/listrow_image" android:layout_below="@+id/listrow_date" android:textSize="12px" android:textColor="#f0f0f0" />
+	<TextView android:id="@+id/listrow_title" android:layout_width="fill_parent" android:text="Title Line" android:fadingEdge="horizontal" android:layout_height="wrap_content" android:textStyle="bold" android:layout_below="@+id/listrow_image" android:layout_alignParentLeft="true" android:textSize="18px" android:textColor="#f0f0f0" android:shadowColor="#000000" android:shadowDx="1.5" android:shadowDy="1.5" android:shadowRadius="2.0"/>
+
+	<TextView android:id="@+id/listrow_summary" android:layout_width="fill_parent" android:layout_below="@id/listrow_title" android:text="Article Summary" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:ellipsize="end" android:textSize="18px" android:textColor="#f0f0f0" android:visibility="gone" />
+	<TextView android:id="@+id/listrow_seen" android:layout_width="fill_parent" android:layout_below="@id/listrow_title" android:text="seen" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:ellipsize="end" android:textSize="18px" android:textColor="#f0f0f0" android:visibility="gone" />
+	<TextView android:id="@+id/listrow_read" android:layout_width="fill_parent" android:layout_below="@id/listrow_title" android:text="read" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:ellipsize="end" android:textSize="18px" android:textColor="#f0f0f0" android:visibility="gone" />
+	<ImageView android:id="@+id/listrow_state" android:src="@drawable/globeicon" android:maxHeight="32px" android:maxWidth="32px" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:layout_height="32px" android:layout_width="32px" android:fadingEdge="horizontal|vertical" android:layout_marginRight="5px"/>
+	
+	<TextView android:id="@+id/listrow_rowid" android:layout_width="fill_parent" android:layout_below="@id/listrow_title" android:text="read" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:ellipsize="end" android:textSize="18px" android:textColor="#f0f0f0" android:visibility="gone" />
+	
+</RelativeLayout>
+
+

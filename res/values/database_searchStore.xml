@@ -1,0 +1,11 @@
+<resources>
+	<string name="searchStore_database">data</string>
+	<string name="searchStore_table">searchStore</string>
+	<string name="searchStore_version">2</string>
+	<string name="searchStore_columns">search text</string>
+		<!-- SQL create column syntax create table xxx (..., these entries, ...) -->
+	<string name="searchStore_updates"></string>
+		<!-- SQL queries seperated by ; progressive updates can be added here -->
+	<string name="searchStore_indexlist">create index searchStore_search on searchStore(search);</string>
+		<!-- SQL queries seperated by ; used on successful table creation or update -->
+</resources>

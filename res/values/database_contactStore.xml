@@ -1,0 +1,11 @@
+<resources>
+	<string name="contactStore_database">data</string>
+	<string name="contactStore_table">contactStore</string>
+	<string name="contactStore_version">2</string>
+	<string name="contactStore_columns">name text, remoteid text unique not null, selectedlast date, alias text, phone text, office text, title text, company text, email text, type text, mobile text, fax text, fname text, lname text, department text, management text, egal text, street text, city text, state text, postal text, notes text</string>
+		<!-- SQL create column syntax create table xxx (..., these entries, ...) -->
+	<string name="contactStore_updates">alter table contactStore add column selectedlast datetime;</string>
+		<!-- SQL queries seperated by ; progressive updates can be added here -->
+	<string name="contactStore_indexlist">create index contactStore_name on contactStore(name);create index contactStore_remoteid on contactStore(remoteid);</string>
+		<!-- SQL queries seperated by ; used on successful table creation or update -->
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:textSize="28px" android:gravity="center" android:paddingRight="5px" android:paddingLeft="5px" android:paddingBottom="5px" android:paddingTop="2px" android:text="Webmail Login" android:textColor="#c0c0c0"/> 
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:orientation="horizontal">
+		
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="top" android:paddingLeft="5px" android:paddingRight="5px" android:layout_weight="1">
+	   <TextView android:id="@+id/configure_urltitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:paddingLeft="2px" android:text="Webmail Address" android:focusable="false"/>
+	   <EditText android:text="" android:id="@+id/configure_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#909090" android:freezesText="true" android:singleLine="true" android:nextFocusDown="@+id/configure_login"/>
+	</LinearLayout>
+	
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:orientation="horizontal">
+	
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="top" android:paddingLeft="5px" android:paddingRight="5px" android:layout_weight="1">
+	   <TextView android:id="@+id/configure_logintitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:paddingLeft="2px" android:text="Login\\Credentials" android:focusable="false"/>
+	   <EditText android:text="Domain\\Username" android:id="@+id/configure_login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#505050" android:freezesText="true" android:singleLine="true"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="top" android:paddingLeft="5px" android:paddingRight="5px" android:layout_weight="1">
+	   <TextView android:id="@+id/configure_passwordtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:paddingLeft="2px" android:text="Passcode/Password" android:focusable="false"/>
+	   <EditText android:text="Password" android:id="@+id/configure_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#505050" android:password="true" android:singleLine="true"/>
+	</LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:orientation="horizontal">
+
+    <Button android:id="@+id/configure_verify" android:layout_height="fill_parent" android:text="Verify Settings" android:layout_weight="1" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_margin="3px"/>
+	<Button android:id="@+id/configure_close" android:layout_height="fill_parent" android:text="Close" android:layout_width="wrap_content" android:layout_gravity="center" android:layout_margin="3px" android:paddingLeft="20px" android:paddingRight="20px"/>
+</LinearLayout>
+
+</LinearLayout>

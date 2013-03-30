@@ -1,0 +1,11 @@
+<resources>
+	<string name="browserStore_database">data</string>
+	<string name="browserStore_table">browserStore</string>
+	<string name="browserStore_version">2</string>
+	<string name="browserStore_columns">key text, value text, domain text, path text</string>
+		<!-- SQL create column syntax create table xxx (..., these entries, ...) -->
+	<string name="browserStore_updates"></string>
+		<!-- SQL queries seperated by ; progressive updates can be added here -->
+	<string name="browserStore_indexlist">create index browserStore_key on browserStore(key);</string>
+		<!-- SQL queries seperated by ; used on successful table creation or update -->
+</resources>

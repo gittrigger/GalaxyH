@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.havenskys.galaxy" android:versionName="3.0.0" android:versionCode="9">
+ 
+   <uses-sdk android:minSdkVersion="2"/>
+      
+    <application android:label="@string/app_name" android:icon="@drawable/companygalaxy">
+    
+    	<activity android:name=".activity.TabStart" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar" android:multiprocess="true" android:exported="true">
+            
+        </activity>
+        
+        <activity android:name=".activity.ListPeople" android:label="Galaxy" android:theme="@android:style/Theme.Black" >
+        
+        </activity>
+        
+        <activity android:name=".activity.PersonSearch" android:label="Galaxy" android:theme="@android:style/Theme.Black" >
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.PersonView" android:label="Galaxy" android:theme="@android:style/Theme.Black" />
+        <activity android:name=".activity.ConfigureLogin" android:label="Galaxy Configure Login" android:theme="@android:style/Theme.Black"></activity>
+        <activity android:name=".activity.ConfigureData" android:label="Galaxy Configure Data" android:theme="@android:style/Theme.Black"></activity>
+        <activity android:name=".activity.ConfigureSync" android:label="Galaxy Configure Sync" android:theme="@android:style/Theme.Black"></activity>
+        
+        
+        <service android:name=".activity.NightWorker" />
+        
+        <provider android:name="DataProvider" android:authorities="com.havenskys.galaxy" android:multiprocess="true" />
+        
+        <receiver android:name=".IntentReceiver" android:process=":galaxyintent" android:enabled="true" android:exported="true">
+			<intent-filter>
+				<category android:name="android.intent.category.DEFAULT" />
+				<action android:name="com.havenskys.galaxy.SERVICE_START0" />
+				<action android:name="com.havenskys.galaxy.SERVICE_START1" />
+				<action android:name="com.havenskys.galaxy.SERVICE_RESET" />
+				<action android:name="com.havenskys.galaxy.SERVICE_SCHEDULE0" />
+				<action android:name="com.havenskys.galaxy.SERVICE_SCHEDULE1" />
+				<action android:name="com.havenskys.galaxy.SERVICE_RECOVER0" />
+				<action android:name="com.havenskys.galaxy.SERVICE_RECOVER1" />
+				<action android:name="com.havenskys.galaxy.SERVICE_RECOVER2" />
+				<action android:name="com.havenskys.galaxy.SERVICE_RECOVER3" />
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.SERVICE_STATE" />
+				<action android:name="android.intent.action.ACTION_SYNC" />
+			</intent-filter>
+		</receiver>
+		
+    </application>
+    
+    
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+	<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+</manifest> 

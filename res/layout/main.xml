@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top" android:padding="5px">
+   
+   <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:gravity="top" android:layout_height="fill_parent" android:background="@drawable/galaxybk">
+   	<EditText android:text="" android:id="@+id/main_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#000000" android:freezesText="true" android:selectAllOnFocus="true" android:textSize="32px" android:singleLine="true" android:layout_weight="1" />
+   	<Button android:id="@+id/main_searchbutton" android:text="Search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="8px" android:textSize="32px"/>
+   </LinearLayout>
+
+   <TextView android:id="@+id/main_searchtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="2px" android:text="Type to search." android:textSize="16px" android:focusable="false"/>
+
+</LinearLayout>
+
+<TextView android:id="@+id/android:empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:text="" android:textSize="36px" android:gravity="center" android:textColor="#000000" android:visibility="gone" android:shadowColor="#ffff55" android:shadowDx="1.5" android:shadowDy="1.5" android:shadowRadius="2"/>
+
+
+<ListView android:id="@+id/android:list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:layout_weight="1"
+	android:stackFromBottom="true" android:nextFocusUp="@+id/android:list" >
+	</ListView>
+
+
+ 
+
+</LinearLayout>
